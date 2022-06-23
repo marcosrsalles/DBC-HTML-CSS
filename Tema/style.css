@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #fff;
+}
+
+address {
+  padding-top: 20px;
+  color: #fff;
+}
+
+iframe {
+  padding-bottom: 20px;
+}
+
+li {
+  list-style: none;
+}
+
+p {
+  padding-bottom: 10px;
+}
+
+.container {
+  margin: auto;
+  max-width: 1280px;
+}
+
+.header {
+  padding-top: 10px;
+  background-color: red;
+}
+
+.logo {
+  border-radius: 100%;
+}
+.img-cogumelo-header {
+  color: #fff;
+}
+
+.cogumelos {
+  text-align: center;
+  margin: 30px;
+}
+
+.cogumelos h1 {
+  margin: 30px;
+}
+
+.cogumelos-img {
+  border-radius: 10%;
+  padding: 10px;
+  border: solid 2px #6663;
+}
+
+.backgroud-text {
+  background-color: #666;
+  color: white;
+  padding: 20px 0;
+}
+
+.card-maps,
+h1,
+.card-yt {
+  text-align: center;
+  padding: 20px 0;
+  color: #666;
+}
+
+.card-border {
+  border: solid 2px #6663;
+  padding: 0 0 20px 20px;
+}
+
+.card-form {
+  padding: 100px 0;
+}
+
+.button {
+  background-color: red;
+  color: #fff;
+  width: 70px;
+  height: 30px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 10px;
+}
+
+.footer-backgroud {
+  background-color: red;
+  padding: 25px;
+}
