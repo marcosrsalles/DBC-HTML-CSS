@@ -1,0 +1,502 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eff3f8;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+    'Helvetica Neue', sans-serif;
+}
+
+header {
+  background: url(/assets/img/patternECOStransparente.png), linear-gradient(to bottom right, #295ba7, #78b454);
+  height: 65px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.container {
+  margin: auto;
+  max-width: 1200px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav > div {
+  display: flex;
+  align-items: center;
+}
+
+header > nav > div > img {
+  width: 105px;
+  height: 36px;
+  margin-right: 20px;
+}
+
+nav > div > a {
+  font-size: 25px;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  bottom: 25px;
+  right: 25px;
+}
+
+.menu:hover {
+  background-color: #3a3e42;
+  border-radius: 0px;
+  opacity: 50%;
+}
+
+.hamburguer {
+  position: relative;
+  display: block;
+  background: #fff;
+  width: 20px;
+  height: 4px;
+  top: 29px;
+  left: 15px;
+  transition: 0.5s ease-in-out;
+}
+
+.hamburguer:before,
+.hamburguer:after {
+  background: #fff;
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: 0.5s ease-in-out;
+}
+
+.hamburguer:before {
+  top: -10px;
+}
+
+.hamburguer:after {
+  bottom: -10px;
+}
+
+nav > div > input {
+  display: none;
+}
+
+input:checked ~ label .hamburguer {
+  transform: rotate(45deg);
+}
+
+input:checked ~ label .hamburguer:before {
+  transform: rotate(90deg);
+  top: 0;
+}
+
+input:checked ~ label .hamburguer:after {
+  transform: rotate(90deg);
+  bottom: 0;
+}
+
+nav > div > a:hover {
+  background-color: #3a3e42;
+  opacity: 50%;
+}
+
+nav > div > div > input {
+  width: 400px;
+  height: 31px;
+  margin-left: 25px;
+  background-color: #356b6578;
+  padding: 3px;
+  border: 1px solid #477881;
+  color: #477881;
+  border-radius: 10px;
+}
+
+nav > div > div > input:focus {
+  background-color: #356b6578;
+  border: 1px solid #669a77;
+  outline: #344548;
+}
+
+nav > div > div > input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+nav > div > div > i {
+  color: #fff;
+  margin-left: 393px;
+  margin-top: 8px;
+  position: absolute;
+  text-align: center;
+  cursor: pointer;
+}
+
+nav > div > div > input::placeholder {
+  color: #fff;
+}
+
+nav > div > i {
+  color: #fff;
+  font-size: 30px;
+  margin-left: 25px;
+}
+
+nav > div:last-child {
+  margin-left: 703px;
+  cursor: pointer;
+}
+
+nav > div:last-child > i:last-child {
+  font-size: 15px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.posts {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: #f8f9fa;
+  margin-top: 20px;
+  min-width: 675px;
+  height: 1600px;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  margin-right: 22px;
+}
+
+h5 {
+  font-size: 14px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  margin-left: 12px;
+  color: #6c757d;
+}
+
+hr {
+  margin-bottom: 12px;
+  opacity: 60%;
+}
+
+img {
+  cursor: pointer;
+}
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  margin-bottom: 20px;
+  width: 665px;
+  height: 250px;
+  box-shadow: 0px 1px 2px #bfbfbf;
+}
+
+.card > div {
+  display: flex;
+  flex-direction: column;
+  max-width: 450px;
+  min-width: 200px;
+}
+
+.card > img {
+  max-width: 200px;
+  min-width: 200px;
+}
+
+.card > div > div > p {
+  margin-bottom: 1rem;
+  margin-top: 30px;
+  margin-right: 10px;
+}
+
+.view-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.fa-heart {
+  color: red;
+  cursor: pointer;
+}
+
+.view-icons > span,
+.fa-comments,
+.fa-eye {
+  cursor: pointer;
+  color: #6c757d;
+}
+
+.view-icons-content {
+  display: flex;
+  margin-left: 245px;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  min-width: 400px;
+}
+
+.card-servicos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 30px;
+  min-width: 200px;
+  min-height: 200px;
+  width: 400px;
+  height: 302px;
+  background-color: #f8f9fa;
+}
+
+.card-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 127px;
+  height: 95px;
+  border: solid 1px #bfbfbf;
+  border-radius: 3px;
+  background-color: #eaecef;
+  box-shadow: 0px 1px 2px #bfbfbf;
+  cursor: pointer;
+}
+
+.card-icon:hover {
+  background: linear-gradient(to bottom right, #295ba7, #78b454);
+}
+
+.card-icon:hover > i,
+.card-icon:hover > span {
+  color: #fff;
+  cursor: pointer;
+}
+
+.card-icon > i {
+  line-height: 10px;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.card-icon > span {
+  font-size: 15px;
+}
+
+.card-icon > i,
+.card-icon > span {
+  color: #28a745;
+}
+
+.brithday-title > h5 {
+  margin-top: 25px;
+}
+
+.card-brithday {
+  display: flex;
+  flex-wrap: wrap;
+  width: 450px;
+  height: 100px;
+  padding: 10px 5px 0 5px;
+  background-color: #fff;
+}
+
+.profile-picture > img {
+  width: 65px;
+  height: 65px;
+  border-radius: 100%;
+  margin-right: 20px;
+}
+
+.brithday-conteint {
+  display: flex;
+  flex-direction: column;
+}
+
+.brithday-conteint > h4 {
+  margin-bottom: 10px;
+}
+
+.brithday-conteint > span {
+  color: #6c757d;
+}
+
+.brithday-conteint > hr {
+  margin-top: 20px;
+  width: 340px;
+}
+
+.brithday-conteint > span > i {
+  margin-right: 5px;
+}
+
+.card-brithday-today {
+  display: flex;
+  flex-wrap: wrap;
+  width: 450px;
+  height: 100px;
+  padding: 10px 5px 0 5px;
+  background-color: #fff;
+}
+
+@media (max-width: 576px) {
+  html {
+    font-size: 10px;
+    overflow-x: hidden;
+  }
+
+  html h5 {
+    font-size: 10px;
+  }
+
+  header {
+    background: url(/assets/img/patternECOStransparente.png), linear-gradient(to bottom right, #295ba7, #78b454);
+    width: 610px;
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  header > nav > div > img {
+    width: 50px;
+    height: 36px;
+    margin-right: 20px;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+  nav > div {
+    display: flex;
+  }
+  nav > div > div > input {
+    width: 100px;
+    height: 31px;
+    margin-left: 25px;
+    background-color: #356b6578;
+    padding: 3px;
+    border: 1px solid #477881;
+    color: #477881;
+    border-radius: 10px;
+  }
+
+  nav > div > div > i {
+    color: #ddd;
+    margin-left: 108px;
+    margin-top: 8px;
+    position: absolute;
+    text-align: center;
+    cursor: pointer;
+  }
+  nav > div:last-child {
+    display: flex;
+    margin-left: 10px;
+    cursor: pointer;
+    flex-direction: column;
+  }
+
+  nav > div > i {
+    color: #fff;
+    font-size: 30px;
+    margin-left: 0px;
+  }
+  .posts {
+    background-color: #f8f9fa;
+    flex-direction: row;
+    margin-top: 10px;
+    width: 300px;
+    height: 1600px;
+    margin-left: -54px;
+  }
+
+  .card {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #fff;
+    margin-bottom: 10px;
+    width: 358px;
+    height: 220px;
+    box-shadow: 0px 1px 2px #bfbfbf;
+    flex-direction: column;
+  }
+
+  .card > div {
+    flex-wrap: wrap;
+    flex-direction: column;
+    max-width: 120px;
+    min-width: 220px;
+  }
+
+  .card > img {
+    margin-left: 5px;
+    margin-top: 10px;
+    max-width: 150px;
+    min-width: 100px;
+  }
+
+  .cards h3 {
+    margin-top: 5px;
+    margin-left: 10px;
+    font-size: 8px;
+  }
+
+  .cards p {
+    margin-left: 10px;
+    width: 120px;
+    font-size: 10px;
+    line-height: 10px;
+  }
+
+  aside {
+    justify-content: center;
+    min-width: 200px;
+  }
+
+  .card-servicos {
+    justify-content: space-around;
+    margin-top: 10px;
+    min-width: 100px;
+    min-height: 100px;
+    height: 399px;
+    background-color: #f8f9fa;
+  }
+
+  .card-brithday,
+  .card-brithday-today {
+    display: flex;
+    width: 388px;
+    padding: 10px 5px 0 5px;
+    background-color: #fff;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .brithday-conteint > hr {
+    margin-top: 19px;
+    width: 225px;
+  }
+}
