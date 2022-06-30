@@ -240,6 +240,10 @@ img {
   cursor: pointer;
 }
 
+.fa-heart:hover {
+  color: rgb(0, 0, 0);
+}
+
 .view-icons > span,
 .fa-comments,
 .fa-eye {
